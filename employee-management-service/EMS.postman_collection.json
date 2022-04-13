@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "3acb8638-2f40-4229-a940-25125f931850",
+		"name": "EMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Employees by Project ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base URL}}/Projects/1/Employees",
+					"host": [
+						"{{Base URL}}"
+					],
+					"path": [
+						"Projects",
+						"1",
+						"Employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete project for a employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{Base URL}}/Employees/1/Projects/1",
+					"host": [
+						"{{Base URL}}"
+					],
+					"path": [
+						"Employees",
+						"1",
+						"Projects",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
